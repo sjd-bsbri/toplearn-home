@@ -115,7 +115,7 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.3 }}
         >
           <img src={time} alt="time" className="w-32 h-32" />
-          <div className="text-xl font-bold">444,812</div>
+          <div className="text-xl font-bold">۴۴۴,۲۵۲</div>
           <div>ساعت آموزش</div>
         </motion.article>
 
@@ -126,7 +126,7 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.4 }}
         >
           <img src={teacher} alt="teacher" className="w-32 h-32" />
-          <div className="text-xl font-bold">120</div>
+          <div className="text-xl font-bold">۲۵۵</div>
           <div>مدرس مجرب</div>
         </motion.article>
 
@@ -137,7 +137,7 @@ const Header = () => {
           transition={{ duration: 0.5, delay: 0.5 }}
         >
           <img src={student} alt="student" className="w-32 h-32" />
-          <div className="text-xl font-bold">444,812</div>
+          <div className="text-xl font-bold">۴۵,۲۵۱</div>
           <div>نفر دانشجو</div>
         </motion.article>
       </section>
