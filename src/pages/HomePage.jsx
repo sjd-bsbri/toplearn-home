@@ -5,6 +5,9 @@ import { FaArrowLeft, FaClock, FaUser } from 'react-icons/fa';
 import CourseCard from '../components/courses/CourseCard';
 import HeroSlider from '../components/home/HeroSlider';
 import CategoryNav from '../components/home/CategoryNav';
+import gridImage9 from '../images/gridImage9.jpg';
+import goldVip from '../images/goldVip.png';
+
 
 // Sample course data (in a real app, this would come from an API)
 const sampleCourses = [
@@ -14,7 +17,7 @@ const sampleCourses = [
     instructor: 'باصبری',
     duration: '27:23:34',
     price: 'رایگان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: true,
   },
   {
@@ -23,7 +26,7 @@ const sampleCourses = [
     instructor: 'علی محمدی',
     duration: '42:15:20',
     price: '۲۵۰,۰۰۰ تومان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: false,
   },
   {
@@ -32,7 +35,7 @@ const sampleCourses = [
     instructor: 'رضا احمدی',
     duration: '35:45:12',
     price: '۳۵۰,۰۰۰ تومان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: false,
   },
   {
@@ -41,7 +44,7 @@ const sampleCourses = [
     instructor: 'مریم حسینی',
     duration: '50:30:45',
     price: '۴۰۰,۰۰۰ تومان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: false,
   },
   {
@@ -50,7 +53,7 @@ const sampleCourses = [
     instructor: 'سارا کریمی',
     duration: '28:15:30',
     price: '۳۰۰,۰۰۰ تومان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: false,
   },
   {
@@ -59,7 +62,7 @@ const sampleCourses = [
     instructor: 'امیر رضایی',
     duration: '20:45:10',
     price: 'رایگان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: true,
   },
   {
@@ -68,7 +71,7 @@ const sampleCourses = [
     instructor: 'حسن محمودی',
     duration: '15:20:45',
     price: 'رایگان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: true,
   },
   {
@@ -77,7 +80,7 @@ const sampleCourses = [
     instructor: 'علی رضایی',
     duration: '45:30:15',
     price: '۴۵۰,۰۰۰ تومان',
-    image: '/src/assets/images/gridImage9.jpg',
+    image: gridImage9,
     isFree: false,
   },
 ];
@@ -181,7 +184,7 @@ const HomePage = () => {
             </div>
             <div className="flex justify-center">
               <motion.img 
-                src="/src/assets/images/goldVip.png" 
+                src={goldVip} 
                 alt="VIP Membership" 
                 className="w-32 h-32 md:w-48 md:h-48"
                 initial={{ opacity: 0, scale: 0.8 }}

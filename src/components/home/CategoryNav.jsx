@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
+import goldVip from '../../assets/images/goldVip.png';
+
 
 const CategoryNav = ({ categories, selectedCategory, setSelectedCategory }) => {
   return (
@@ -26,7 +28,7 @@ const CategoryNav = ({ categories, selectedCategory, setSelectedCategory }) => {
         </nav>
         
         <div className="flex items-center">
-          <img src="/src/assets/images/goldVip.png" alt="gold" className="w-10 h-10" />
+          <img src={goldVip} alt="gold" className="w-10 h-10" />
           <Link to="/vip" className="text-primary-500 text-sm hover:text-primary-600 transition-colors">
             مخصوص اعضای ویژه
           </Link>
