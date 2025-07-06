@@ -5,6 +5,8 @@ import path from 'path';
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
+  base: "/toplearnHomePage",
+
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src'),
@@ -17,5 +19,4 @@ export default defineConfig({
       '@utils': path.resolve(__dirname, './src/utils'),
     },
   },
-  // base:"/toplearn-home"
 });
