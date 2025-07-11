@@ -20,6 +20,8 @@ const ContactUsPage = lazy(() => import('./pages/ContactUsPage'));
 const VIPMembershipPage = lazy(() => import('./pages/VIPMembershipPage'));
 const FAQPage = lazy(() => import('./pages/FAQPage'));
 const ContactFormPage = lazy(() => import('./pages/ContactFormPage'));
+const TermsPage = lazy(() => import('./pages/TermsPage'));
+const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 
 import LoadingSpinner from './components/ui/LoadingSpinner';
 
@@ -42,6 +44,8 @@ const App = () => {
           <Route path="vip" element={<VIPMembershipPage />} />
           <Route path="faq" element={<FAQPage />} />
           <Route path="contact-form" element={<ContactFormPage />} />
+          <Route path="terms" element={<TermsPage />} />
+          <Route path="privacy" element={<PrivacyPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
