@@ -105,7 +105,7 @@ const RegisterPage = () => {
                     className={`input pl-10 ${errors.fullName ? 'border-red-500' : ''}`}
                     placeholder="علی محمدی"
                   />
-                  <FaUser className="absolute right-3 top-3 text-gray-400" />
+                  <FaUser className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.fullName && <p className="text-red-500 text-sm mt-1">{errors.fullName}</p>}
               </div>
@@ -122,7 +122,7 @@ const RegisterPage = () => {
                     className={`input pl-10 ${errors.email ? 'border-red-500' : ''}`}
                     placeholder="example@email.com"
                   />
-                  <FaEnvelope className="absolute right-3 top-3 text-gray-400" />
+                  <FaEnvelope className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
               </div>
@@ -139,7 +139,7 @@ const RegisterPage = () => {
                     className={`input pl-10 ${errors.phone ? 'border-red-500' : ''}`}
                     placeholder="09123456789"
                   />
-                  <FaPhone className="absolute right-3 top-3 text-gray-400" />
+                  <FaPhone className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.phone && <p className="text-red-500 text-sm mt-1">{errors.phone}</p>}
               </div>
@@ -156,7 +156,7 @@ const RegisterPage = () => {
                     className={`input pl-10 ${errors.password ? 'border-red-500' : ''}`}
                     placeholder="******"
                   />
-                  <FaLock className="absolute right-3 top-3 text-gray-400" />
+                  <FaLock className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
               </div>
@@ -173,7 +173,7 @@ const RegisterPage = () => {
                     className={`input pl-10 ${errors.confirmPassword ? 'border-red-500' : ''}`}
                     placeholder="******"
                   />
-                  <FaLock className="absolute right-3 top-3 text-gray-400" />
+                  <FaLock className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.confirmPassword && <p className="text-red-500 text-sm mt-1">{errors.confirmPassword}</p>}
               </div>
