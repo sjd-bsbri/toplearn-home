@@ -59,7 +59,7 @@ const Footer = () => {
               <p>ایمیل: info@toplearn.com</p>
               <p>تلفن: 021-12345678</p>
               <div className="pt-4">
-                <Link to="/contact" className="bg-primary-500 hover:bg-primary-600 text-white py-2 px-4 rounded-md transition-colors">ارسال پیام</Link>
+                <Link to="/contact-form" className="bg-primary-500 hover:bg-primary-600 text-white py-2 px-4 rounded-md transition-colors">ارسال پیام</Link>
               </div>
             </div>
           </div>

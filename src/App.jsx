@@ -15,6 +15,12 @@ const JobOpportunities  = lazy(() => import('../src/components/features/JobOppor
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
+// New pages for footer links
+const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
+const ContactUsPage = lazy(() => import('./pages/ContactUsPage'));
+const VIPMembershipPage = lazy(() => import('./pages/VIPMembershipPage'));
+const FAQPage = lazy(() => import('./pages/FAQPage'));
+const ContactFormPage = lazy(() => import('./pages/ContactFormPage'));
 
 import LoadingSpinner from './components/ui/LoadingSpinner';
 
@@ -32,6 +38,11 @@ const App = () => {
           <Route path="support" element={<Consultation  />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
+          <Route path="about" element={<AboutUsPage />} />
+          <Route path="contact" element={<ContactUsPage />} />
+          <Route path="vip" element={<VIPMembershipPage />} />
+          <Route path="faq" element={<FAQPage />} />
+          <Route path="contact-form" element={<ContactFormPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Route>
       </Routes>
