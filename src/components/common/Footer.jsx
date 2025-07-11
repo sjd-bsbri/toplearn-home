@@ -67,7 +67,7 @@ const Footer = () => {
         
         <div className="border-t border-gray-800 mt-10 pt-6">
           <div className="flex flex-col md:flex-row justify-between items-center">
-            <p className="text-gray-500 text-sm">© {new Date().getFullYear()} تاپ لرن. تمامی حقوق محفوظ است.</p>
+            <p className="text-gray-500 text-sm">© {new Date().getFullYear()} برای تاپ لرن تمامی حقوق محفوظ است.</p>
             <div className="flex space-x-4 space-x-reverse mt-4 md:mt-0">
               <Link to="/terms" className="text-gray-500 text-sm hover:text-primary-500 transition-colors">قوانین و مقررات</Link>
               <Link to="/privacy" className="text-gray-500 text-sm hover:text-primary-500 transition-colors">حریم خصوصی</Link>

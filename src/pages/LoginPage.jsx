@@ -84,7 +84,7 @@ const LoginPage = () => {
                     className={`input pl-10 ${errors.email ? 'border-red-500' : ''}`}
                     placeholder="example@email.com"
                   />
-                  <FaUser className="absolute right-3 top-3 text-gray-400" />
+                  <FaUser className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
               </div>
@@ -101,7 +101,7 @@ const LoginPage = () => {
                     className={`input pl-10 ${errors.password ? 'border-red-500' : ''}`}
                     placeholder="******"
                   />
-                  <FaLock className="absolute right-3 top-3 text-gray-400" />
+                  <FaLock className="absolute left-3 top-3 text-gray-400" />
                 </div>
                 {errors.password && <p className="text-red-500 text-sm mt-1">{errors.password}</p>}
               </div>

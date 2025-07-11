@@ -15,7 +15,6 @@ const JobOpportunities  = lazy(() => import('./pages/JobOpportunities'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
-// New pages for footer links
 const AboutUsPage = lazy(() => import('./pages/AboutUsPage'));
 const ContactUsPage = lazy(() => import('./pages/ContactUsPage'));
 const VIPMembershipPage = lazy(() => import('./pages/VIPMembershipPage'));
