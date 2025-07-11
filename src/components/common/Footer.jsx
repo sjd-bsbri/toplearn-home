@@ -12,19 +12,19 @@ const Footer = () => {
               تاپ لرن یک پلتفرم آموزشی آنلاین است که با هدف ارائه آموزش‌های با کیفیت در حوزه برنامه‌نویسی و طراحی وب ایجاد شده است. ما به شما کمک می‌کنیم تا با کمترین هزینه، مهارت‌های حرفه‌ای کسب کنید.
             </p>
             <div className="flex space-x-4 space-x-reverse">
-              <a href="https://instagram.com/toplearn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://instagram.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <FaInstagram size={24} />
               </a>
-              <a href="https://t.me/toplearn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://telegram.org/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <FaTelegram size={24} />
               </a>
-              <a href="https://twitter.com/toplearn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <FaTwitter size={24} />
               </a>
-              <a href="https://youtube.com/toplearn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://youtube.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <FaYoutube size={24} />
               </a>
-              <a href="https://linkedin.com/company/toplearn" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
+              <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-primary-500 transition-colors">
                 <FaLinkedin size={24} />
               </a>
             </div>
