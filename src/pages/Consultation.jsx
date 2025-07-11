@@ -346,7 +346,7 @@ const Consultation = () => {
             <button className="btn btn-primary">
               رزرو جلسه مشاوره
             </button>
-            <button className="btn btn-outline">
+            <button   onClick={() => (window.location.href = "/toplearn-home/faq")} className="btn btn-outline">
               سوالات متداول
             </button>
           </div>

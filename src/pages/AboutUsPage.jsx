@@ -59,7 +59,7 @@ const AboutUsPage = () => {
             </div>
             <div className="rounded-xl overflow-hidden shadow-md">
               <img 
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" 
+                src="https://bairesdev.mo.cloudinary.net/blog/2021/07/software-developing-team.jpg?tx=w_1920%2Cq_auto" 
                 alt="تیم تاپ لرن" 
                 className="w-full h-auto"
               />
@@ -150,17 +150,17 @@ const AboutUsPage = () => {
             {
               name: 'علی محمدی',
               role: 'مدیر عامل و بنیانگذار',
-              image: 'https://randomuser.me/api/portraits/men/32.jpg'
+              image: 'https://i.pravatar.cc/150?img=1'
             },
             {
               name: 'سارا احمدی',
               role: 'مدیر آموزش',
-              image: 'https://randomuser.me/api/portraits/women/44.jpg'
+              image: 'https://i.pravatar.cc/150?img=43'
             },
             {
               name: 'محمد رضایی',
               role: 'مدیر فنی',
-              image: 'https://randomuser.me/api/portraits/men/68.jpg'
+              image: 'https://i.pravatar.cc/150?img=13'
             }
           ].map((member, index) => (
             <div key={index} className="bg-white rounded-lg shadow-md overflow-hidden">

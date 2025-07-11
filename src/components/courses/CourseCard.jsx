@@ -12,11 +12,13 @@ const CourseCard = ({ course }) => {
       transition={{ duration: 0.2 }}
     >
       <div className="relative overflow-hidden">
-        <img 
-          src={image} 
-          alt={title} 
-          className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" 
-        />
+        <Link to={`/courses/${id}`}>
+          <img 
+            src={image} 
+            alt={title} 
+            className="w-full h-48 object-cover transition-transform duration-300 group-hover:scale-105" 
+          />
+        </Link>
         {isFree && (
           <div className="absolute top-3 left-3 bg-green-500 text-white text-xs py-1 px-2 rounded-md">
             رایگان
@@ -32,9 +34,9 @@ const CourseCard = ({ course }) => {
         <div className="border-b-2 border-b-slate-200 pb-3">
           <div className="flex items-center space-x-2 space-x-reverse">
             <FaUser className="text-slate-400" />
-            <Link to={`/instructors/${instructor}`} className="text-slate-500 text-sm hover:text-primary-500 transition-colors">
+            <span className="text-slate-500 text-sm hover:text-primary-500 transition-colors">
               {instructor}
-            </Link>
+            </span>
           </div>
         </div>
       </div>

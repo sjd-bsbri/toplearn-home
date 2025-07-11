@@ -85,7 +85,7 @@ const Collaboration = () => {
               </div>
 
               <div className="mt-8">
-                <button className="btn btn-primary">
+                <button  className="btn btn-primary">
                   درخواست همکاری
                 </button>
                 <button className="btn btn-outline mr-4">
@@ -108,7 +108,7 @@ const Collaboration = () => {
               
               <div className="relative z-10 bg-white rounded-2xl shadow-xl overflow-hidden border-4 border-white">
                 <img
-                  src="https://via.placeholder.com/600x400?text=Collaboration+with+TopLearn"
+                  src="https://cdn.tarhpik.com/5_Preview/1403/6/4/122401/Photo-of-business-managers-and-business-colleagues-shaking-hands-after-the-meeting-400.webp"
                   alt="همکاری با تاپ‌لرن"
                   className="w-full h-auto"
                 />

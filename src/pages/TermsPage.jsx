@@ -171,7 +171,7 @@ const TermsPage = () => {
         <div className="bg-white rounded-lg shadow-md p-6 max-w-3xl mx-auto">
           <div className="flex items-center text-gray-600">
             <FaCheckCircle className="text-green-500 ml-2" />
-            <p>آخرین به‌روزرسانی: ۱۵ خرداد ۱۴۰۳</p>
+            <p>آخرین به‌روزرسانی: ۱۵ خرداد ۱۴۰۴</p>
           </div>
         </div>
       </section>
@@ -213,7 +213,7 @@ const TermsPage = () => {
             اگر در مورد قوانین و مقررات سایت سوالی دارید، می‌توانید با تیم پشتیبانی ما تماس بگیرید.
           </p>
           <a
-            href="/contact"
+            href="/toplearn-home/contact"
             className="bg-primary-500 hover:bg-primary-600 text-white py-2 px-6 rounded-md transition-colors inline-block"
           >
             تماس با پشتیبانی

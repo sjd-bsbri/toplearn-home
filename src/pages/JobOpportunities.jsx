@@ -21,7 +21,7 @@ const jobListings = [
     salary: '۱۵ تا ۲۵ میلیون تومان',
     postedDate: '۲ روز پیش',
     category: 'frontend',
-    logo: 'https://via.placeholder.com/50x50?text=TL',
+    logo: 'https://dummyimage.com/300x200/000000/ffffff&text=REACT',
   },
   {
     id: 2,
@@ -32,7 +32,7 @@ const jobListings = [
     salary: '۲۰ تا ۳۰ میلیون تومان',
     postedDate: '۱ هفته پیش',
     category: 'backend',
-    logo: 'https://via.placeholder.com/50x50?text=IN',
+    logo: 'https://dummyimage.com/300x200/000000/ffffff&text=NODE',
   },
   {
     id: 3,
@@ -43,7 +43,7 @@ const jobListings = [
     salary: '۲۵ تا ۳۵ میلیون تومان',
     postedDate: '۳ روز پیش',
     category: 'fullstack',
-    logo: 'https://via.placeholder.com/50x50?text=FT',
+    logo: 'https://dummyimage.com/300x200/000000/ffffff&text=MERN',
   },
   {
     id: 4,
@@ -54,7 +54,7 @@ const jobListings = [
     salary: '۱۲ تا ۲۰ میلیون تومان',
     postedDate: '۱ روز پیش',
     category: 'ui',
-    logo: 'https://via.placeholder.com/50x50?text=DD',
+    logo: 'https://dummyimage.com/300x200/000000/ffffff&text=UI/UX',
   },
   {
     id: 5,
@@ -65,7 +65,7 @@ const jobListings = [
     salary: '۱۸ تا ۲۸ میلیون تومان',
     postedDate: '۵ روز پیش',
     category: 'mobile',
-    logo: 'https://via.placeholder.com/50x50?text=MS',
+    logo: 'https://dummyimage.com/300x200/000000/ffffff&text=Native',
   },
 ];
 

@@ -187,13 +187,13 @@ const ContactUsPage = () => {
         <div className="bg-white rounded-lg shadow-md p-8 text-center">
           <h2 className="text-2xl font-bold text-gray-900 mb-6">ما را در شبکه‌های اجتماعی دنبال کنید</h2>
           <div className="flex justify-center space-x-6 space-x-reverse">
-            <a href="#" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
+            <a href="https://instagram.com/" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
               <FaInstagram className="text-primary-600 text-2xl" />
             </a>
-            <a href="#" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
+            <a href="https://telegram.org/" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
               <FaTelegram className="text-primary-600 text-2xl" />
             </a>
-            <a href="#" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
+            <a href="https://twitter.com/" className="bg-primary-100 hover:bg-primary-200 p-4 rounded-full transition-colors">
               <FaTwitter className="text-primary-600 text-2xl" />
             </a>
           </div>

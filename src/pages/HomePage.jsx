@@ -118,7 +118,7 @@ const HomePage = () => {
         <header className="container flex flex-col space-y-4 lg:flex-row lg:justify-between lg:space-y-0">
           <div className="ps-10">
             <h3 className="font-medium text-lg">
-              آخرین دوره های تاپلرن
+               دوره های تاپلرن
             </h3>
           </div>
           <div className="flex items-center space-x-2 space-x-reverse ps-10">

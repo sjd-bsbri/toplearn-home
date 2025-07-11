@@ -283,13 +283,13 @@ const FAQPage = () => {
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
-              href="/contact"
+              href="/toplearn-home/contact"
               className="bg-primary-500 hover:bg-primary-600 text-white py-2 px-6 rounded-md transition-colors inline-block"
             >
               تماس با پشتیبانی
             </a>
             <a
-              href="/contact-form"
+              href="/toplearn-home/contact-form"
               className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-6 rounded-md transition-colors inline-block"
             >
               ارسال پیام

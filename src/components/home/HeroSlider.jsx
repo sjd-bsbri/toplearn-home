@@ -101,15 +101,7 @@ const HeroSlider = () => {
                 >
                   {slide.description}
                 </motion.p>
-                <motion.a
-                  href={slide.link}
-                  className="bg-primary-500 hover:bg-primary-600 text-white py-2 px-6 rounded-md transition-colors"
-                  initial={{ opacity: 0, scale: 0.9 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  transition={{ duration: 0.5, delay: 0.6 }}
-                >
-                  مشاهده دوره ها
-                </motion.a>
+              
               </div>
             </div>
           </SwiperSlide>

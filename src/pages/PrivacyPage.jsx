@@ -207,7 +207,7 @@ const PrivacyPage = () => {
         <div className="bg-white rounded-lg shadow-md p-6 max-w-3xl mx-auto">
           <div className="flex items-center text-gray-600">
             <FaShieldAlt className="text-primary-500 ml-2" />
-            <p>آخرین به‌روزرسانی: ۱۵ خرداد ۱۴۰۳</p>
+            <p>آخرین به‌روزرسانی: ۱۵ خرداد ۱۴۰۴</p>
           </div>
         </div>
       </section>
@@ -256,7 +256,7 @@ const PrivacyPage = () => {
               privacy@toplearn.com
             </a>
             <a
-              href="/contact"
+              href="/toplearn-home/contact"
               className="bg-gray-200 hover:bg-gray-300 text-gray-800 py-2 px-6 rounded-md transition-colors inline-block"
             >
               تماس با پشتیبانی

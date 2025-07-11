@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FiClock, FiTag, FiChevronLeft, FiChevronRight } from 'react-icons/fi';
 
@@ -10,7 +10,7 @@ const discountItems = [
     discountedPrice: 840000,
     discountPercent: 30,
     remainingHours: 12,
-    image: 'https://via.placeholder.com/300x200?text=React.js',
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=React.js',
   },
   {
     id: 2,
@@ -19,7 +19,7 @@ const discountItems = [
     discountedPrice: 686000,
     discountPercent: 30,
     remainingHours: 8,
-    image: 'https://via.placeholder.com/300x200?text=Next.js',
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=Next.js',
   },
   {
     id: 3,
@@ -28,7 +28,7 @@ const discountItems = [
     discountedPrice: 900000,
     discountPercent: 40,
     remainingHours: 16,
-    image: 'https://via.placeholder.com/300x200?text=Node.js',
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=Node.js',
   },
   {
     id: 4,
@@ -37,25 +37,92 @@ const discountItems = [
     discountedPrice: 525000,
     discountPercent: 30,
     remainingHours: 24,
-    image: 'https://via.placeholder.com/300x200?text=TailwindCSS',
+    image: "https://dummyimage.com/300x200/111827/ffffff&text=TailwindCSS",
+  },
+  {
+    id: 5,
+    title: 'آموزش کامل Python',
+    originalPrice: 850000,
+    discountedPrice: 595000,
+    discountPercent: 20,
+    remainingHours: 14,
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=Python',
+  },
+  {
+    id: 6,
+    title: 'آموزش کامل Flutter',
+    originalPrice: 1000000,
+    discountedPrice: 700000,
+    discountPercent: 45,
+    remainingHours: 10,
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=Flutter',
+  },
+  {
+    id: 7,
+    title: 'آموزش کامل Laravel',
+    originalPrice: 9000000,
+    discountedPrice: 500000,
+    discountPercent: 35,
+    remainingHours: 12,
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=Laravel',
+  },
+  {
+    id: 8,
+    title: 'آموزش کامل Django',
+    originalPrice: 1200000,
+    discountedPrice: 800000,
+    discountPercent: 25,
+    remainingHours: 2,
+    image: 'https://dummyimage.com/300x200/111827/ffffff&text=Django',
   },
 ];
 
 const DailyDiscounts = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isAutoPlaying, setIsAutoPlaying] = useState(true);
+  const itemsToShow = 4; // Number of items shown at once in desktop view
+  const maxIndex = discountItems.length - itemsToShow;
+  
+  // Auto-play functionality
+  useEffect(() => {
+    let interval;
+    if (isAutoPlaying) {
+      interval = setInterval(() => {
+        nextSlide();
+      }, 5000); // Change slide every 5 seconds
+    }
+    
+    return () => {
+      if (interval) clearInterval(interval);
+    };
+  }, [currentIndex, isAutoPlaying]);
   
   const nextSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === discountItems.length - 2 ? 0 : prevIndex + 1
-    );
+    setCurrentIndex((prevIndex) => {
+      // If we're at the last possible index, loop back to 0
+      if (prevIndex >= maxIndex) {
+        return 0;
+      }
+      // Otherwise, go to next index
+      return prevIndex + 1;
+    });
   };
 
   const prevSlide = () => {
-    setCurrentIndex((prevIndex) => 
-      prevIndex === 0 ? discountItems.length - 2 : prevIndex - 1
-    );
+    setCurrentIndex((prevIndex) => {
+      // If we're at the first index, loop to the last possible index
+      if (prevIndex <= 0) {
+        return maxIndex;
+      }
+      // Otherwise, go to previous index
+      return prevIndex - 1;
+    });
   };
 
+  // Pause auto-play when hovering over the slider
+  const handleMouseEnter = () => setIsAutoPlaying(false);
+  const handleMouseLeave = () => setIsAutoPlaying(true);
+  
   // Format price with commas
   const formatPrice = (price) => {
     return price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ',');
@@ -87,9 +154,13 @@ const DailyDiscounts = () => {
           </div>
         </div>
 
-        <div className="relative overflow-hidden">
+        <div 
+          className="relative overflow-hidden" 
+          onMouseEnter={handleMouseEnter}
+          onMouseLeave={handleMouseLeave}
+        >
           <div 
-            className="flex transition-transform duration-300 ease-in-out"
+            className="flex transition-transform duration-500 ease-in-out"
             style={{ transform: `translateX(${currentIndex * 25}%)` }}
           >
             {discountItems.map((item) => (
@@ -139,6 +210,20 @@ const DailyDiscounts = () => {
               </motion.div>
             ))}
           </div>
+        </div>
+        
+        {/* Indicator dots */}
+        <div className="flex justify-center mt-6">
+          {Array.from({ length: maxIndex + 1 }).map((_, index) => (
+            <button
+              key={index}
+              onClick={() => setCurrentIndex(index)}
+              className={`w-2 h-2 mx-1 rounded-full transition-colors ${
+                currentIndex === index ? 'bg-primary-500' : 'bg-gray-300'
+              }`}
+              aria-label={`رفتن به اسلاید ${index + 1}`}
+            />
+          ))}
         </div>
       </div>
     </section>
