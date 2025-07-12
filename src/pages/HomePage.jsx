@@ -17,7 +17,7 @@ const sampleCourses = [
     instructor: 'باصبری',
     duration: '27:23:34',
     price: 'رایگان',
-    image: gridImage9,
+    image: "https://www.karlancer.com/blog/wp-content/uploads/2024/07/1715021638881-768x460.jpg",
     isFree: true,
   },
   {
@@ -26,7 +26,7 @@ const sampleCourses = [
     instructor: 'علی محمدی',
     duration: '42:15:20',
     price: '۲۵۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://toplearn.com/img/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_react_%D8%A8%D8%A7_%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87_%D8%A7%D8%B2_vite.jpg",
     isFree: false,
   },
   {
@@ -35,7 +35,7 @@ const sampleCourses = [
     instructor: 'رضا احمدی',
     duration: '35:45:12',
     price: '۳۵۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://botostart.org/images/posters/node.png",
     isFree: false,
   },
   {
@@ -44,7 +44,7 @@ const sampleCourses = [
     instructor: 'مریم حسینی',
     duration: '50:30:45',
     price: '۴۰۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://sabzlearn.ir/wp-content/uploads/2025/01/py2-1-1536x864.webp",
     isFree: false,
   },
   {
@@ -53,7 +53,7 @@ const sampleCourses = [
     instructor: 'سارا کریمی',
     duration: '28:15:30',
     price: '۳۰۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://maktabsharif.ir/wp-content/uploads/2023/12/uiux.jpg",
     isFree: false,
   },
   {
@@ -62,7 +62,7 @@ const sampleCourses = [
     instructor: 'امیر رضایی',
     duration: '20:45:10',
     price: 'رایگان',
-    image: gridImage9,
+    image: "https://aiolearn.com/wp-content/uploads/2023/12/javascript01-min-1024x576.jpg",
     isFree: true,
   },
   {
@@ -71,7 +71,7 @@ const sampleCourses = [
     instructor: 'حسن محمودی',
     duration: '15:20:45',
     price: 'رایگان',
-    image: gridImage9,
+    image: "https://toplearn.com/img/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C_%DA%AF%DB%8C%D8%AA_%D9%88_%DA%AF%DB%8C%D8%AA_%D9%87%D8%A7%D8%A8.jpg",
     isFree: true,
   },
   {
@@ -80,7 +80,7 @@ const sampleCourses = [
     instructor: 'علی رضایی',
     duration: '45:30:15',
     price: '۴۵۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://toplearn.com/img/course/%D8%AF%D9%88%D8%B1%D9%87_%D8%AC%D8%A7%D9%85%D8%B9_%D8%A2%D9%85%D9%88%D8%B2%D8%B4_Laravel.jpg",
     isFree: false,
   },
 ];
