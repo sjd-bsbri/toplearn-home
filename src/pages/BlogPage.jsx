@@ -2,12 +2,7 @@ import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { FaCalendarAlt, FaUser, FaSearch, FaTags } from 'react-icons/fa';
-import slideImg1 from '../images/slideImg1.jpg';
-import slideImg2 from '../images/slideImg2.jpg';
-import slideImg3 from '../images/slideImg3.jpg';
-import slideImg4 from '../images/slideImg4.jpg';
-import slideImg5 from '../images/slideImg5.jpg';
-// Sample blog posts data
+
 const sampleBlogPosts = [
   {
     id: 1,
@@ -15,7 +10,7 @@ const sampleBlogPosts = [
     excerpt: 'در این مقاله به بررسی ویژگی‌های جدید React 18 و تغییرات آن نسبت به نسخه‌های قبلی می‌پردازیم...',
     author: 'علی محمدی',
     date: '۱۴۰۲/۰۲/۱۵',
-    image: slideImg1,
+    image: "https://rashed.ir/wp-content/uploads/2023/11/%D8%A2%D9%85%D9%88%D8%B2%D8%B4-react.js.jpg",
     category: 'frontend',
     tags: ['React', 'JavaScript', 'Frontend']
   },
@@ -25,7 +20,7 @@ const sampleBlogPosts = [
     excerpt: 'در این مقاله به معرفی Node.js و فریمورک Express و کاربردهای آن‌ها در توسعه وب می‌پردازیم...',
     author: 'رضا احمدی',
     date: '۱۴۰۲/۰۲/۱۰',
-    image: slideImg2,
+    image: "https://toshan.net/wp-content/uploads/2020/05/nodejs.jpeg",
     category: 'backend',
     tags: ['Node.js', 'Express', 'Backend']
   },
@@ -35,7 +30,7 @@ const sampleBlogPosts = [
     excerpt: 'در این مقاله به آموزش کامل Tailwind CSS و نحوه استفاده از آن در پروژه‌های وب می‌پردازیم...',
     author: 'مریم حسینی',
     date: '۱۴۰۲/۰۲/۰۵',
-    image: slideImg3,
+    image: "https://www.karlancer.com/blog/wp-content/uploads/2024/07/1715021638881-768x460.jpg",
     category: 'frontend',
     tags: ['CSS', 'Tailwind', 'Frontend']
   },
@@ -45,7 +40,7 @@ const sampleBlogPosts = [
     excerpt: 'در این مقاله به معرفی هوش مصنوعی و کاربردهای آن در صنایع مختلف می‌پردازیم...',
     author: 'سارا کریمی',
     date: '۱۴۰۲/۰۲/۰۱',
-    image: slideImg4,
+    image: "https://shamizanjani.ir/wp-content/uploads/2020/05/05-AI--640x480.jpg",
     category: 'ai',
     tags: ['AI', 'Machine Learning', 'Data Science']
   },
@@ -55,7 +50,7 @@ const sampleBlogPosts = [
     excerpt: 'در این مقاله به معرفی Docker و مفهوم کانتینرها و نحوه استفاده از آن‌ها می‌پردازیم...',
     author: 'امیر رضایی',
     date: '۱۴۰۲/۰۱/۲۵',
-    image: slideImg5,
+    image: "https://static.roocket.ir/images/cover/2022/3/5/Vgvs8x7NuDYduPQO0unTb7Lfq2qo5y5ZrnhnBM9t.jpg",
     category: 'devops',
     tags: ['Docker', 'DevOps', 'Container']
   },
@@ -65,7 +60,7 @@ const sampleBlogPosts = [
     excerpt: 'در این مقاله به آموزش مقدماتی Git و GitHub برای مبتدیان می‌پردازیم...',
     author: 'حسن محمودی',
     date: '۱۴۰۲/۰۱/۲۰',
-    image: slideImg1,
+    image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ_m07lJs4wrk1r8I1eCP673aaa7zqUhvxarw&s",
     category: 'tools',
     tags: ['Git', 'GitHub', 'Version Control']
   }
