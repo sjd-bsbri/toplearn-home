@@ -16,7 +16,7 @@ const CategoryNav = ({ categories, selectedCategory, setSelectedCategory }) => {
           {categories.map((category) => (
             <Link 
               key={category.id}
-              to="#" 
+              to={category.path} 
               onClick={() => setSelectedCategory(category.id)}
               className={`transition-colors hover:text-primary-500 ${
                 selectedCategory === category.id ? 'text-primary-500 font-medium' : ''

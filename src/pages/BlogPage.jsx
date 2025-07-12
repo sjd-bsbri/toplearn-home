@@ -174,7 +174,7 @@ const BlogPage = () => {
         transition={{ duration: 0.3 }}
       >
         <h1 className="text-4xl font-extrabold text-gray-900 mb-4">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-purple-600">
+          <span className="bg-clip-text  font-bold text-gray-800">
             وبلاگ تاپ لرن
           </span>
         </h1>
