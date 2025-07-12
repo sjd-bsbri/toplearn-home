@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { FaFilter, FaSearch } from 'react-icons/fa';
 import CourseCard from '../components/courses/CourseCard';
-import gridImage9 from '../images/gridImage9.jpg';
 
 
 // Sample course data (in a real app, this would come from an API)

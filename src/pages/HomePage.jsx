@@ -287,7 +287,7 @@
 import { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
-import { FaArrowLeft, FaClock, FaUser } from 'react-icons/fa';
+import { FaArrowLeft} from 'react-icons/fa';
 import CourseCard from '../components/courses/CourseCard';
 import HeroSlider from '../components/home/HeroSlider';
 import CategoryNav from '../components/home/CategoryNav';

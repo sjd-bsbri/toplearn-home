@@ -2,7 +2,6 @@ import { useParams, Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 import { FaClock, FaUser, FaShoppingCart, FaBookmark, FaShare, FaPlayCircle, FaArrowRight } from 'react-icons/fa';
 import { motion } from 'framer-motion';
-import gridImage9 from '../images/gridImage9.jpg';
 
 const sampleCourses = [
   {
@@ -11,7 +10,7 @@ const sampleCourses = [
     instructor: 'باصبری',
     duration: '27:23:34',
     price: 'رایگان',
-    image: gridImage9,
+    image: "https://www.karlancer.com/blog/wp-content/uploads/2024/07/1715021638881-768x460.jpg",
     isFree: true,
     description: 'در این دوره جامع، شما با فریمورک Tailwind CSS آشنا خواهید شد و یاد می‌گیرید چگونه وب‌سایت‌های مدرن و واکنش‌گرا بسازید. از مفاهیم پایه تا تکنیک‌های پیشرفته را پوشش می‌دهیم.',
     topics: [
@@ -33,7 +32,7 @@ const sampleCourses = [
     instructor: 'علی محمدی',
     duration: '42:15:20',
     price: '۲۵۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://toplearn.com/img/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_react_%D8%A8%D8%A7_%D8%A7%D8%B3%D8%AA%D9%81%D8%A7%D8%AF%D9%87_%D8%A7%D8%B2_vite.jpg",
     isFree: false,
     description: 'این دوره برای توسعه‌دهندگانی طراحی شده که می‌خواهند مهارت‌های React خود را به سطح بالاتری برسانند. مفاهیم پیشرفته مانند Hooks، Context API، و بهینه‌سازی عملکرد را خواهید آموخت.',
     topics: [
@@ -55,7 +54,7 @@ const sampleCourses = [
     instructor: 'رضا احمدی',
     duration: '35:45:12',
     price: '۳۵۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://botostart.org/images/posters/node.png",
     isFree: false,
     description: 'در این دوره، شما با Node.js و فریمورک Express آشنا می‌شوید و یاد می‌گیرید چگونه API‌های RESTful و برنامه‌های وب سمت سرور بسازید.',
     topics: [
@@ -77,7 +76,7 @@ const sampleCourses = [
     instructor: 'مریم حسینی',
     duration: '50:30:45',
     price: '۴۰۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://sabzlearn.ir/wp-content/uploads/2025/01/py2-1-1536x864.webp",
     isFree: false,
     description: 'این دوره جامع پایتون برای مبتدیان تا افراد با تجربه طراحی شده است. از مفاهیم پایه تا موضوعات پیشرفته مانند برنامه‌نویسی شیءگرا و کار با کتابخانه‌های مختلف را پوشش می‌دهیم.',
     topics: [
@@ -99,7 +98,7 @@ const sampleCourses = [
     instructor: 'سارا کریمی',
     duration: '28:15:30',
     price: '۳۰۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://maktabsharif.ir/wp-content/uploads/2023/12/uiux.jpg",
     isFree: false,
     description: 'در این دوره، اصول طراحی رابط کاربری (UI) و تجربه کاربری (UX) را می‌آموزید و با ابزارهای طراحی مانند Figma و Adobe XD آشنا می‌شوید.',
     topics: [
@@ -121,7 +120,7 @@ const sampleCourses = [
     instructor: 'امیر رضایی',
     duration: '20:45:10',
     price: 'رایگان',
-    image: gridImage9,
+    image: "https://aiolearn.com/wp-content/uploads/2023/12/javascript01-min-1024x576.jpg",
     isFree: true,
     description: 'این دوره برای افرادی که می‌خواهند برنامه‌نویسی وب را شروع کنند طراحی شده است. مفاهیم پایه جاوا اسکریپت را به صورت کاربردی و با مثال‌های عملی یاد می‌گیرید.',
     topics: [
@@ -143,7 +142,7 @@ const sampleCourses = [
     instructor: 'حسن محمودی',
     duration: '15:20:45',
     price: 'رایگان',
-    image: gridImage9,
+    image: "https://toplearn.com/img/course/%D8%A2%D9%85%D9%88%D8%B2%D8%B4_%DA%A9%D8%A7%D8%B1%D8%A8%D8%B1%D8%AF%DB%8C_%DA%AF%DB%8C%D8%AA_%D9%88_%DA%AF%DB%8C%D8%AA_%D9%87%D8%A7%D8%A8.jpg",
     isFree: true,
     description: 'در این دوره، با سیستم کنترل نسخه Git و پلتفرم GitHub آشنا می‌شوید و یاد می‌گیرید چگونه پروژه‌های خود را مدیریت کنید.',
     topics: [
@@ -165,7 +164,7 @@ const sampleCourses = [
     instructor: 'علی رضایی',
     duration: '45:30:15',
     price: '۴۵۰,۰۰۰ تومان',
-    image: gridImage9,
+    image: "https://toplearn.com/img/course/%D8%AF%D9%88%D8%B1%D9%87_%D8%AC%D8%A7%D9%85%D8%B9_%D8%A2%D9%85%D9%88%D8%B2%D8%B4_Laravel.jpg",
     isFree: false,
     description: 'در این دوره پیشرفته Laravel، با مفاهیم پیچیده‌تر این فریمورک آشنا می‌شوید و یاد می‌گیرید چگونه برنامه‌های وب مقیاس‌پذیر و حرفه‌ای بسازید.',
     topics: [
