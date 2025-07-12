@@ -1,18 +1,17 @@
 import { Routes, Route } from 'react-router-dom';
 import { lazy, Suspense } from 'react';
 
-// Layouts
 import MainLayout from './layouts/MainLayout';
 
-// Pages
 const HomePage = lazy(() => import('./pages/HomePage'));
 const CoursesPage = lazy(() => import('./pages/CoursesPage'));
 const CourseDetailsPage = lazy(() => import('./pages/CourseDetailsPage'));
+const BlogPostDetail = lazy(() => import('./pages/BlogPostDetail'));
 const BlogPage = lazy(() => import('./pages/BlogPage'));
 const DailyDiscounts = lazy(() => import('./pages/DailyDiscounts'));
-const Consultation  = lazy(() => import('./pages/Consultation'));
-const Collaboration  = lazy(() => import('./pages/Collaboration'));
-const JobOpportunities  = lazy(() => import('./pages/JobOpportunities'));
+const Consultation = lazy(() => import('./pages/Consultation'));
+const Collaboration = lazy(() => import('./pages/Collaboration'));
+const JobOpportunities = lazy(() => import('./pages/JobOpportunities'));
 const LoginPage = lazy(() => import('./pages/LoginPage'));
 const RegisterPage = lazy(() => import('./pages/RegisterPage'));
 const NotFoundPage = lazy(() => import('./pages/NotFoundPage'));
@@ -35,10 +34,11 @@ const App = () => {
           <Route path="courses" element={<CoursesPage />} />
           <Route path="courses/:id" element={<CourseDetailsPage />} />
           <Route path="blog" element={<BlogPage />} />
+          <Route path="blog/:id" element={<BlogPostDetail />} />
           <Route path="discounts" element={<DailyDiscounts />} />
-          <Route path="jobs" element={<JobOpportunities  />} />
-          <Route path="cooperation" element={<Collaboration  />} />
-          <Route path="support" element={<Consultation  />} />
+          <Route path="jobs" element={<JobOpportunities />} />
+          <Route path="cooperation" element={<Collaboration />} />
+          <Route path="support" element={<Consultation />} />
           <Route path="login" element={<LoginPage />} />
           <Route path="register" element={<RegisterPage />} />
           <Route path="about" element={<AboutUsPage />} />
