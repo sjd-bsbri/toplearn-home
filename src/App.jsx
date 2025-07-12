@@ -103,9 +103,9 @@ const PrivacyPage = lazy(() => import('./pages/PrivacyPage'));
 
 // New pages for HomePage categories
 const ProgrammingAndWebDesignPage = lazy(() => import('./pages/ProgrammingAndWebDesignPage'));
-// const KidsProgrammingPage = lazy(() => import('./pages/KidsProgrammingPage'));
-// const IntroToProgrammingPage = lazy(() => import('./pages/IntroToProgrammingPage'));
-// const DeafCoursesPage = lazy(() => import('./pages/DeafCoursesPage'));
+const KidsProgrammingPage = lazy(() => import('./pages/KidsProgrammingPage'));
+const IntroToProgrammingPage = lazy(() => import('./pages/IntroToProgrammingPage'));
+const DeafCoursesPage = lazy(() => import('./pages/DeafCoursesPage'));
 
 
 import LoadingSpinner from './components/ui/LoadingSpinner';
